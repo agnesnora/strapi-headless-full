@@ -29,6 +29,14 @@ const populate = {
           },
         },
       },
+      "blocks.markdown": true,
+      "blocks.person-card": {
+        populate: {
+          image: {
+            fields: ["alternativeText", "url"],
+          },
+        },
+      },
     },
   },
 };

@@ -37,6 +37,29 @@ export interface BlocksHero extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksMarkdown extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_markdowns';
+  info: {
+    displayName: 'Markdown';
+  };
+  attributes: {
+    content: Schema.Attribute.RichText;
+  };
+}
+
+export interface BlocksPersonCard extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_person_cards';
+  info: {
+    displayName: 'Person Card';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    personName: Schema.Attribute.String;
+    personTitle: Schema.Attribute.String;
+    text: Schema.Attribute.Text;
+  };
+}
+
 export interface BlocksSectionHeading extends Struct.ComponentSchema {
   collectionName: 'components_blocks_section_headings';
   info: {
@@ -130,6 +153,8 @@ declare module '@strapi/strapi' {
       'blocks.card-grid': BlocksCardGrid;
       'blocks.content-with-image': BlocksContentWithImage;
       'blocks.hero': BlocksHero;
+      'blocks.markdown': BlocksMarkdown;
+      'blocks.person-card': BlocksPersonCard;
       'blocks.section-heading': BlocksSectionHeading;
       'layout.banner': LayoutBanner;
       'layout.footer': LayoutFooter;
