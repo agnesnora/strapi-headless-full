@@ -20,7 +20,10 @@
     "blocks": {
       "type": "dynamiczone",
       "components": [
-        "blocks.hero"
+        "blocks.hero",
+        "blocks.section-heading",
+        "blocks.card-grid",
+        "blocks.content-with-image"
       ]
     }
   }

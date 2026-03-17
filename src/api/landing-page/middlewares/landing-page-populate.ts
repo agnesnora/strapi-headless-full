@@ -5,15 +5,27 @@
 import type { Core } from "@strapi/strapi";
 
 const populate = {
-  populate: {
-    blocks: {
-      on: {
-        "blocks.hero": {
-          populate: {
-            links: true,
-            image: {
-              fields: ["alternativeText", "url"],
-            },
+  blocks: {
+    on: {
+      "blocks.hero": {
+        populate: {
+          links: true,
+          image: {
+            fields: ["alternativeText", "url"],
+          },
+        },
+      },
+      "blocks.section-heading": true,
+      "blocks.card-grid": {
+        populate: {
+          cards: true,
+        },
+      },
+      "blocks.content-with-image": {
+        populate: {
+          link: true,
+          image: {
+            fields: ["alternativeText", "url"],
           },
         },
       },
