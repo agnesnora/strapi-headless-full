@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_plant_grids",
+  "info": {
+    "displayName": "PlantGrid"
+  },
+  "options": {},
+  "attributes": {
+    "plantCard": {
+      "type": "component",
+      "component": "shared.plant-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

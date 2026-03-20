@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_plant_cards",
+  "info": {
+    "displayName": "PlantCard"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "light": {
+      "type": "string"
+    },
+    "watering": {
+      "type": "string"
+    },
+    "difficulity": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

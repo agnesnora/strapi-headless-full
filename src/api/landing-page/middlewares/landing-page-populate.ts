@@ -21,6 +21,17 @@ const populate = {
           cards: true,
         },
       },
+      "blocks.plant-grid": {
+        populate: {
+          plantCard: {
+            populate: {
+              image: {
+                fields: ["alternativeText", "url"],
+              },
+            },
+          },
+        },
+      },
       "blocks.content-with-image": {
         populate: {
           link: true,

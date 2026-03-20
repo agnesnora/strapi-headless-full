@@ -94,6 +94,16 @@ export interface BlocksPersonCard extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksPlantGrid extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_plant_grids';
+  info: {
+    displayName: 'PlantGrid';
+  };
+  attributes: {
+    plantCard: Schema.Attribute.Component<'shared.plant-card', true>;
+  };
+}
+
 export interface BlocksSectionHeading extends Struct.ComponentSchema {
   collectionName: 'components_blocks_section_headings';
   info: {
@@ -181,6 +191,21 @@ export interface SharedLogoLink extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedPlantCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_plant_cards';
+  info: {
+    displayName: 'PlantCard';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    difficulity: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    light: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    watering: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -192,6 +217,7 @@ declare module '@strapi/strapi' {
       'blocks.markdown': BlocksMarkdown;
       'blocks.newsletter': BlocksNewsletter;
       'blocks.person-card': BlocksPersonCard;
+      'blocks.plant-grid': BlocksPlantGrid;
       'blocks.section-heading': BlocksSectionHeading;
       'layout.banner': LayoutBanner;
       'layout.footer': LayoutFooter;
@@ -199,6 +225,7 @@ declare module '@strapi/strapi' {
       'shared.card': SharedCard;
       'shared.link': SharedLink;
       'shared.logo-link': SharedLogoLink;
+      'shared.plant-card': SharedPlantCard;
     }
   }
 }
