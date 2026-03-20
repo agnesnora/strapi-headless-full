@@ -661,6 +661,7 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
         'blocks.faqs',
         'blocks.newsletter',
         'blocks.featured-articles',
+        'blocks.plant-grid',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{
