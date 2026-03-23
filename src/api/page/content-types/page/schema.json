@@ -51,7 +51,11 @@
         "blocks.faqs",
         "blocks.content-with-image",
         "blocks.card-grid",
-        "blocks.featured-articles"
+        "blocks.featured-articles",
+        "blocks.title",
+        "blocks.plant-grid",
+        "blocks.fun-facts",
+        "blocks.item"
       ]
     }
   }

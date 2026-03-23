@@ -48,7 +48,10 @@
         "blocks.faqs",
         "blocks.newsletter",
         "blocks.featured-articles",
-        "blocks.plant-grid"
+        "blocks.plant-grid",
+        "blocks.title",
+        "blocks.fun-facts",
+        "blocks.item"
       ]
     }
   }

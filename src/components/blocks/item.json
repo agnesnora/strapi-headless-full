@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_items",
+  "info": {
+    "displayName": "Item"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

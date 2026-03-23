@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_fun_facts",
+  "info": {
+    "displayName": "funFacts"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "listItem": {
+      "type": "component",
+      "component": "blocks.item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

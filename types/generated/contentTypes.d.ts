@@ -662,6 +662,9 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
         'blocks.newsletter',
         'blocks.featured-articles',
         'blocks.plant-grid',
+        'blocks.title',
+        'blocks.fun-facts',
+        'blocks.item',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{
@@ -723,6 +726,10 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'blocks.content-with-image',
         'blocks.card-grid',
         'blocks.featured-articles',
+        'blocks.title',
+        'blocks.plant-grid',
+        'blocks.fun-facts',
+        'blocks.item',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

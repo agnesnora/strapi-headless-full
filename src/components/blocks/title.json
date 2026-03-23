@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_titles",
+  "info": {
+    "displayName": "Title"
+  },
+  "options": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -44,6 +44,17 @@ export interface BlocksFeaturedArticles extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksFunFacts extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_fun_facts';
+  info: {
+    displayName: 'funFacts';
+  };
+  attributes: {
+    listItem: Schema.Attribute.Component<'blocks.item', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface BlocksHero extends Struct.ComponentSchema {
   collectionName: 'components_blocks_heroes';
   info: {
@@ -54,6 +65,16 @@ export interface BlocksHero extends Struct.ComponentSchema {
     image: Schema.Attribute.Media<'images' | 'files'>;
     links: Schema.Attribute.Component<'shared.link', true>;
     text: Schema.Attribute.RichText;
+  };
+}
+
+export interface BlocksItem extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_items';
+  info: {
+    displayName: 'Item';
+  };
+  attributes: {
+    text: Schema.Attribute.Text;
   };
 }
 
@@ -113,6 +134,17 @@ export interface BlocksSectionHeading extends Struct.ComponentSchema {
     anchorLink: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     subHeading: Schema.Attribute.String;
+  };
+}
+
+export interface BlocksTitle extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_titles';
+  info: {
+    displayName: 'Title';
+  };
+  attributes: {
+    mainTitle: Schema.Attribute.String;
+    subTitle: Schema.Attribute.Text;
   };
 }
 
@@ -213,12 +245,15 @@ declare module '@strapi/strapi' {
       'blocks.content-with-image': BlocksContentWithImage;
       'blocks.faqs': BlocksFaqs;
       'blocks.featured-articles': BlocksFeaturedArticles;
+      'blocks.fun-facts': BlocksFunFacts;
       'blocks.hero': BlocksHero;
+      'blocks.item': BlocksItem;
       'blocks.markdown': BlocksMarkdown;
       'blocks.newsletter': BlocksNewsletter;
       'blocks.person-card': BlocksPersonCard;
       'blocks.plant-grid': BlocksPlantGrid;
       'blocks.section-heading': BlocksSectionHeading;
+      'blocks.title': BlocksTitle;
       'layout.banner': LayoutBanner;
       'layout.footer': LayoutFooter;
       'layout.header': LayoutHeader;
