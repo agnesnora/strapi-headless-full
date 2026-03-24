@@ -19,7 +19,7 @@ const populate = {
       "blocks.fun-facts": {
         populate: { listItem: true },
       },
-      "blocks.card-grid": {
+      "blocks.card-grids": {
         populate: {
           cards: true,
         },
