@@ -21,7 +21,7 @@ const populate = {
       },
       "blocks.card-grid": {
         populate: {
-          card: true,
+          cards: true,
         },
       },
       "blocks.title": true,

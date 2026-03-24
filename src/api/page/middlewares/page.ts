@@ -18,7 +18,7 @@ const populate = {
       "blocks.section-heading": true,
       "blocks.card-grid": {
         populate: {
-          card: true,
+          cards: true,
         },
       },
       "blocks.plant-grid": {
