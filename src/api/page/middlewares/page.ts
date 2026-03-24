@@ -33,8 +33,9 @@ const populate = {
         },
       },
       "blocks.fun-facts": {
-        populate: { items: true },
+        populate: { listItem: true },
       },
+      "blocks.title": true,
       "blocks.content-with-image": {
         populate: {
           link: true,

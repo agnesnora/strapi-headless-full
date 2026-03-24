@@ -17,13 +17,14 @@ const populate = {
       },
       "blocks.section-heading": true,
       "blocks.fun-facts": {
-        populate: { items: true },
+        populate: { listItem: true },
       },
       "blocks.card-grid": {
         populate: {
           cards: true,
         },
       },
+      "blocks.title": true,
       "blocks.plant-grid": {
         populate: {
           plantCard: {
