@@ -16,9 +16,9 @@ const populate = {
         },
       },
       "blocks.section-heading": true,
-      "blocks.card-grids": {
+      "blocks.card-grid": {
         populate: {
-          cards: true,
+          card: true,
         },
       },
       "blocks.plant-grid": {
